@@ -13,54 +13,40 @@
 }
 
 body {
+    margin-top: 10vh;
+    color: white;
+    font-family: 'GangwonEdu_OTFBoldA';
     background-color: #403964;
 }
-
-.login {
-    color: rgb(255, 255, 255);
-    margin-top: 1.03cm;
-}
-
-.big_login {
-    margin-left: 125px;
-    margin-top: 20px;
-}
-
-.search {
-    font-family: 'Pretendard-Regular';
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    margin-left: 30px;
-}
-
-.first_come {
-    font-family: 'GangwonEdu_OTFBoldA';
-    font-size: 18.1px;
-    color: rgb(255, 255, 255);
-    margin-left: 2.74cm;
-    margin-top: 1.42cm;
-}
-
-.first_logo {
-    height: 2.15cm;
-    margin-left: 3.5cm;
-    margin-top: 0.52cm;
-}
-
-.back_mypage {
-	grid-column: 2;
+.login_container {
+    height: 100%;
     display: flex;
-	width: 42vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30%;
+    vertical-align: middle;
+}
+
+.logo_login {
+    width: 40%;
+}
+
+.back_login {
+	width: 60vh;
 	height: auto;
 	bottom: 0;
-	position: fixed;
-	margin-left: 50vw;
+    float: right;
 }
-
-.password {
-    font-family: 'GangwonEdu_OTFBoldA';
+/*
+.back_login {
+    width: 40%;
+    height: 100%;
+    float: right;
+    bottom: 0;
+    margin-top: 10%;
 }
-
+*/
 #id_username, #id_password {
     font-family: 'GangwonEdu_OTFBoldA';
     color: rgb(255, 255, 255);
@@ -68,60 +54,20 @@ body {
     margin-left: 0.4cm;
     border: none;
     width: 172px;
+    border-bottom: 1px solid #FFFFFF;
 }
 
-#id_username {
+#id_username:hover, #id_password:hover {
     border-bottom: 1px solid #FFBA00;
     color: #FFBA00;
 }
 
-#id_password {
-    background-color: #403964;
-    border-bottom: 1px solid #FFFFFF;
-}
-
-.username_login {
-    margin-left: 2.94cm;
-    color: #FFBA00;
-    background-color: #403964;
-}
-
-.username_account {
-    color: #FFBA00;
-}
-
-.password_login {
-    margin-left: 2.62cm;
-    margin-top: 0.6cm;
-    background-color: #403964;
-}
-
-.checkbox {
-    border-radius: 20px;
-    width: 0.29cm;
-    height: 0.29cm;
-}
-
-.checktext {
-    font-family: 'GangwonEdu_OTFBoldA';
-    color: rgb(255, 255, 255);
-    margin-left: 2.6cm;
-}
-
-.hui {
-    color: #FFBA00;
-    margin-left: 50px;
-}
-
-.purple {
-    background-color: #8F87A7;
+.login_button {
     font-family: 'Pretendard-Regular';
-    color: rgb(255, 255, 255);
+    background-color: #8F87A7;
+    width: 100%;
+    height: 2rem;
+    color: white;
     border: none;
-    width: 6.5cm;
-    height: 0.85cm;
     border-radius: 10px;
-    margin-left: 2.63cm;
-    margin-top: 0.8cm;
-    margin-bottom: 1.47cm;
 }

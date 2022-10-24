@@ -46,9 +46,6 @@ body {
     border-bottom: 1px solid white;
 }
 */
-.signup {
-    color: rgb(255, 255, 255);
-}
 
 #id_username, #id_password1, #id_password2, #id_phonenumber, #id_email, #id_username2 {
     background-color: #403964;
