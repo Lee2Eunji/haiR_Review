@@ -11,18 +11,20 @@
 </head>
 
 <body>
-    <img class="back_signup" src="{% static 'img/account/logo4.png' %}">
     <div class="signup_container">
-        <form method="POST" action="{% url 'signup' %">
+        <form method="POST" action="{% url 'signup' %}">
             {% csrf_token %}
-            <div class="div2">
-                <label class="form_signup">{{ form.as_p }}</label>
-            </div>
+            {% for field in form %}
+            {{ field.label }}
+            <input type="{{ field.field.widget.input_type }}" name="{{ field.name }}">
+            {% endfor %}
+            {{form.as_p}}
             <button class="signup_button" type="submit"> 회원가입 </button>
         </form>
     </div>
-    <script href="{% static 'js/signup.js' %}"></script>
-    <!--! 아니면 src인가..?-->
+    <img class="back_signup" src="{% static 'img/account/logo4.png' %}">
+    <script src="{% static 'js/signup.js' %}"></script>
+    <!-- 아니면 src인가..?-->
 </body>
 
 </html>
